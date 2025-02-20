@@ -1,0 +1,17 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-g",
+      "-Iincludes",
+      "-c",
+      "-o",
+      "builds/main.o",
+      "src/main.c"
+    ],
+    "directory": "/home/archer/c_projects/simple-shell",
+    "file": "/home/archer/c_projects/simple-shell/src/main.c",
+    "output": "/home/archer/c_projects/simple-shell/builds/main.o"
+  }
+]
