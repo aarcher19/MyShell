@@ -4,11 +4,14 @@
 #include <unistd.h>
 #include "../includes/shell.h"
 #include "executor.h"
+#include "../includes/history.h"
 
 int main() 
 {
   char *input;
   char cwd[1024];
+  
+  load_history();
 
   while (1) {
      if (getcwd(cwd, sizeof(cwd)) == NULL) {
@@ -27,4 +30,5 @@ int main()
     execute_command(input);
     free(input);
   }
+  save_history();
 }

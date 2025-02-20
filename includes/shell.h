@@ -3,6 +3,6 @@
 
 char *read_input();
 
+void add_to_history(const char *command);
 
-#define SHELL_H
 #endif

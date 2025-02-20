@@ -7,6 +7,9 @@
 #include "../includes/parser.h"
 #include "../includes/help.h"
 
+extern char *history[];
+extern int history_count;
+
 void execute_command(char *input) {
   char **args = parse_input(input);
 
@@ -25,6 +28,13 @@ void execute_command(char *input) {
         free(args);
         return;
     }
+
+  if (strcmp(args[0], "history") == 0) {
+    for (int i = 0; i < history_count; i++) {
+        printf("%d %s\n", i + 1, history[i]);
+    }
+    return;
+}
 
   if (strcmp(args[0], "cd") == 0) {
         if (args[1] == NULL) {

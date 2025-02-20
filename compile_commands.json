@@ -7,11 +7,11 @@
       "-Iincludes",
       "-c",
       "-o",
-      "builds/main.o",
-      "src/main.c"
+      "builds/history.o",
+      "src/history.c"
     ],
-    "directory": "/home/archer/c_projects/simple-shell",
-    "file": "/home/archer/c_projects/simple-shell/src/main.c",
-    "output": "/home/archer/c_projects/simple-shell/builds/main.o"
+    "directory": "/home/archer/c_projects/MyShell",
+    "file": "/home/archer/c_projects/MyShell/src/history.c",
+    "output": "/home/archer/c_projects/MyShell/builds/history.o"
   }
 ]
