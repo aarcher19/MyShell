@@ -29,6 +29,7 @@ int main()
     }
     execute_command(input);
     free(input);
+    save_history();
   }
-  save_history();
+  
 }
