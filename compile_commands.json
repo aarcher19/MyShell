@@ -3,7 +3,43 @@
     "arguments": [
       "/usr/bin/gcc",
       "-Wall",
+      "-Wextra",
       "-g",
+      "-I/usr/include",
+      "-Iincludes",
+      "-c",
+      "-o",
+      "builds/executor.o",
+      "src/executor.c"
+    ],
+    "directory": "/home/archer/c_projects/MyShell",
+    "file": "/home/archer/c_projects/MyShell/src/executor.c",
+    "output": "/home/archer/c_projects/MyShell/builds/executor.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-g",
+      "-I/usr/include",
+      "-Iincludes",
+      "-c",
+      "-o",
+      "builds/help.o",
+      "src/help.c"
+    ],
+    "directory": "/home/archer/c_projects/MyShell",
+    "file": "/home/archer/c_projects/MyShell/src/help.c",
+    "output": "/home/archer/c_projects/MyShell/builds/help.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-g",
+      "-I/usr/include",
       "-Iincludes",
       "-c",
       "-o",
@@ -13,5 +49,56 @@
     "directory": "/home/archer/c_projects/MyShell",
     "file": "/home/archer/c_projects/MyShell/src/history.c",
     "output": "/home/archer/c_projects/MyShell/builds/history.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-g",
+      "-I/usr/include",
+      "-Iincludes",
+      "-c",
+      "-o",
+      "builds/main.o",
+      "src/main.c"
+    ],
+    "directory": "/home/archer/c_projects/MyShell",
+    "file": "/home/archer/c_projects/MyShell/src/main.c",
+    "output": "/home/archer/c_projects/MyShell/builds/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-g",
+      "-I/usr/include",
+      "-Iincludes",
+      "-c",
+      "-o",
+      "builds/parser.o",
+      "src/parser.c"
+    ],
+    "directory": "/home/archer/c_projects/MyShell",
+    "file": "/home/archer/c_projects/MyShell/src/parser.c",
+    "output": "/home/archer/c_projects/MyShell/builds/parser.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-g",
+      "-I/usr/include",
+      "-Iincludes",
+      "-c",
+      "-o",
+      "builds/shell.o",
+      "src/shell.c"
+    ],
+    "directory": "/home/archer/c_projects/MyShell",
+    "file": "/home/archer/c_projects/MyShell/src/shell.c",
+    "output": "/home/archer/c_projects/MyShell/builds/shell.o"
   }
 ]

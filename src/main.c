@@ -5,6 +5,8 @@
 #include "../includes/shell.h"
 #include "executor.h"
 #include "../includes/history.h"
+#include <readline/readline.h>
+#include <readline/history.h>
 
 int main() 
 {
@@ -21,12 +23,20 @@ int main()
 
      printf("mysh:%s$ ", cwd);
      fflush(stdout);
- 
-    input = read_input();
+
+    char prompt[1050];
+    input = readline(prompt);
+
     if(input == NULL) {
       printf("\n");
       break;
     }
+
+     if (strlen(input) > 0) {
+            add_history(input);  // Add to history
+            add_to_history(input);  // Store in our custom history
+      }
+
     execute_command(input);
     free(input);
     save_history();
